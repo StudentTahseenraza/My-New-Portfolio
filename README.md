@@ -9,7 +9,7 @@ This is a modern, responsive portfolio website built with **Next.js 15**, showca
 - CSS Modules
 
 ## 🔗 Live Demo
-[Add your deployed URL here]
+(https://my-new-portfolio-3efo.vercel.app/)
 
 ## 📁 Features
 - About, Skills, and Experience pages
