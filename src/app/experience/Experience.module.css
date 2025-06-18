@@ -1,0 +1,42 @@
+.experiencesSection {
+  position: relative;
+  padding: 4rem 0;
+  overflow: hidden;
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5))
+}
+
+.experiencesTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.experiencesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns on larger screens */
+  gap: 2rem;
+  padding: 0 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  .experiencesGrid {
+    grid-template-columns: 1fr; /* 1 column on medium screens */
+  }
+}
+
+@media (max-width: 640px) {
+  .experiencesTitle {
+    font-size: 2rem;
+  }
+
+  .experiencesGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}

@@ -1,0 +1,43 @@
+.projectsSection {
+  position: relative;
+  padding: 4rem 0;
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/Project.avif');
+  background-size: cover;
+  background-position: center;
+}
+
+.projectsTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns */
+  gap: 2rem; /* Spacing between cards */
+  padding: 0 1rem;
+  max-width: 1200px; /* Limit the width for better spacing */
+  margin: 0 auto; /* Center the grid */
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  .projectsGrid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+  }
+}
+
+@media (max-width: 640px) {
+  .projectsTitle {
+    font-size: 2rem;
+  }
+
+  .projectsGrid {
+    grid-template-columns: 1fr; /* 1 column on small screens */
+    gap: 1.5rem;
+  }
+}

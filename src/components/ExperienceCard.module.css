@@ -1,0 +1,66 @@
+.experienceCard {
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.experienceCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.experienceContent {
+  text-align: left;
+}
+
+.experienceRole {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.experienceOrganization {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #ddd;
+  margin-bottom: 0.25rem;
+}
+
+.experienceDuration {
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 1rem;
+}
+
+.experienceAchievements {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  font-size: 1.125rem;
+  color: #ccc;
+}
+
+.experienceAchievements li {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 640px) {
+  .experienceRole {
+    font-size: 1.25rem;
+  }
+
+  .experienceOrganization {
+    font-size: 1rem;
+  }
+
+  .experienceDuration {
+    font-size: 0.875rem;
+  }
+
+  .experienceAchievements {
+    font-size: 1rem;
+  }
+}

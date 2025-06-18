@@ -1,0 +1,101 @@
+.aboutSection {
+  position: relative;
+  padding: 4rem 0;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/About.avif');
+  background-size: cover;
+  background-position: center;  
+}
+
+.aboutTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.aboutDescription {
+  font-size: 1.25rem;
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1; /* Ensure description is below the balloon */
+}
+
+.balloonWrapper {
+  position: relative;
+  height: 400px; /* Increased height to ensure balloon is fully visible */
+  overflow: visible; /* Prevent clipping */
+}
+
+.balloon {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  animation: floatUp 4s infinite;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.balloonText {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+  25% {
+    transform: translateX(-40%) translateY(-50px);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-100px);
+  }
+  75% {
+    transform: translateX(-60%) translateY(-150px);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-200px);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .aboutTitle {
+    font-size: 2rem;
+  }
+
+  .aboutDescription {
+    font-size: 1rem;
+  }
+
+  .balloonWrapper {
+    height: 350px; /* Adjusted for mobile */
+  }
+
+  .balloon {
+    width: 120px;
+    height: 120px;
+  }
+
+  .balloonText {
+    font-size: 0.875rem;
+    padding: 0.25rem;
+  }
+}

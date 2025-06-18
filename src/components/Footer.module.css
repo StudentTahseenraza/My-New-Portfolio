@@ -1,0 +1,63 @@
+.footer {
+  padding: 2rem 1rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.982), rgba(0, 0, 0, 0.5));
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.footerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+}
+
+.footerText {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  color: #ddd;
+}
+
+.footerLinks {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.footerLink {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footerLink:hover {
+  color: #3b82f6; /* Matches the portfolio's primary color */
+  transform: scale(1.1);
+}
+
+@media (max-width: 640px) {
+  .footer {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .footerContent {
+    padding: 0.75rem;
+  }
+
+  .footerText {
+    font-size: 0.75rem;
+  }
+
+  .footerLink {
+    font-size: 0.875rem;
+  }
+}

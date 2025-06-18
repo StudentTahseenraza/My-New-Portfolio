@@ -1,0 +1,135 @@
+.projectCardWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectCard {
+  padding: 1.5rem;
+  transition: transform 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+.balloon {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  animation: floatUp 5s infinite;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.balloonText {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  border-radius: 4px;
+  width: 100%;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+  25% {
+    transform: translateX(-40%) translateY(-50px);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-100px);
+  }
+  75% {
+    transform: translateX(-60%) translateY(-150px);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-200px);
+    opacity: 0;
+  }
+}
+
+.projectCanvas {
+  width: 300px;
+  height: 200px;
+  margin: 0 auto 1rem;
+}
+
+.projectContent {
+  text-align: center;
+}
+
+.projectTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.projectTech {
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 0.5rem;
+}
+
+.projectDescription {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.projectLink {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  background-size: 200% 100%;
+  color: #fff;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-position 0.5s;
+}
+
+.projectLink:hover {
+  background-position: 100% 0;
+}
+
+@media (max-width: 640px) {
+  .projectCanvas {
+    width: 250px;
+    height: 167px;
+  }
+
+  .projectTitle {
+    font-size: 1.25rem;
+  }
+
+  .projectDescription {
+    font-size: 1rem;
+  }
+
+  .projectTech {
+    font-size: 0.875rem;
+  }
+
+  .balloon {
+    width: 120px;
+    height: 120px;
+  }
+
+  .balloonText {
+    font-size: 0.875rem;
+    padding: 0.25rem;
+  }
+}

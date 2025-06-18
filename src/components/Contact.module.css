@@ -1,0 +1,67 @@
+.contactSection {
+  padding: 5rem 1rem;
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5))
+}
+
+.contactTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  animation: fade-in 1s ease-in-out;
+}
+
+.contactForm {
+  max-width: 512px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.formLabel {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.formInput,
+.formTextarea {
+  width: 100%;
+  padding: 0.5rem;
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: var(--foreground);
+  font-size: 1rem;
+}
+
+.formTextarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.formButton {
+  width: 100%;
+  padding: 0.5rem;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.formButton:hover {
+  background: #357abd;
+}
+
+@media (max-width: 640px) {
+  .contactForm {
+    padding: 1rem;
+  }
+}
